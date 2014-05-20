@@ -1,0 +1,19 @@
+{
+  "name": "monthy",
+  "version": "0.0.1",
+  "description": "html5 dev conf node app",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "yes"
+  },
+  "keywords": [
+    "node",
+    "js"
+  ],
+  "author": "Monthy Python",
+  "license": "ISC"
+}
