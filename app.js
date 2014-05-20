@@ -11,14 +11,16 @@ console.log("Go to http://localhost:3000 on your browser");
 */
 
 // better version
-
 var express = require('express');
 var app = express();
 
 app.set('view engine', 'ejs');
 
 app.get('/', function(req, res) {
-  res.send('<H1>Hello</H1> Express');
+  res.render('default', {
+    title: 'Home',
+    users: ['Ray', 'Morten', 'James']
+  });
 });
 
 app.get('/me', function(req, res) {
@@ -40,7 +42,6 @@ app.get('*', function(req, res) {
   res.send('Bad Route');
 });
 
-var server = app.listen(3001, function() {
-  console.log('Listening on port 3001');
+var server = app.listen(3003, function() {
+  console.log('Listening on port 3000');
 });
-
