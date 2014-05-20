@@ -15,5 +15,8 @@
     "js"
   ],
   "author": "Monthy Python",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.2.0"
+  }
 }
